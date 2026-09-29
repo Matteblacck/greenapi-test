@@ -1,0 +1,13 @@
+:root {
+  --background: #f2f3f7;
+  --surface: #fff;
+  --surface-muted: #f6f7fa;
+  --text-primary: #20232d;
+  --text-secondary: #747987;
+  --border: #e6e8ee;
+  --accent: #5d5fef;
+  --accent-hover: #4c4ed6;
+  --bubble-out: #e9e9ff;
+  --danger: #d84a59;
+  --shadow: 0 12px 40px rgba(32, 35, 45, 0.08);
+}

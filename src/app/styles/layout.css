@@ -1,0 +1,89 @@
+.app-shell {
+  height: 100vh;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+}
+.chat-layout {
+  width: min(1180px, 100%);
+  height: min(800px, calc(100vh - 48px));
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.sidebar {
+  border-right: 1px solid var(--border);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.chat-area {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 0;
+}
+.empty-chat {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #fafaff, #f4f4ff);
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 24px;
+}
+.empty-chat__icon {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+.credentials-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+.credentials-card {
+  width: min(440px, 100%);
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+.credentials-card h1 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+.credentials-card p {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+.form-stack {
+  display: grid;
+  gap: 16px;
+}
+@media (max-width: 700px) {
+  .app-shell {
+    padding: 0;
+  }
+  .chat-layout {
+    height: 100vh;
+    border-radius: 0;
+    border: 0;
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+  .chat-layout--sidebar-open .sidebar {
+    display: flex;
+  }
+  .chat-layout--sidebar-open .chat-area,
+  .chat-layout--sidebar-open .empty-chat {
+    display: none;
+  }
+}

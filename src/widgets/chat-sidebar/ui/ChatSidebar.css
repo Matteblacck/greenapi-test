@@ -1,0 +1,80 @@
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand__mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 11px;
+  background: var(--accent);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+.brand div {
+  display: grid;
+  gap: 2px;
+}
+.brand strong {
+  font-size: 15px;
+}
+.brand small {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+.instance-card {
+  margin-top: auto;
+  display: grid;
+  gap: 7px;
+  padding: 13px;
+  background: var(--surface-muted);
+  border-radius: 12px;
+}
+.instance-card span {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+.instance-card strong {
+  font-size: 13px;
+}
+.instance-card .button {
+  padding: 8px 10px;
+  font-size: 12px;
+  text-align: left;
+}
+.chat-list {
+  display: grid;
+  gap: 4px;
+  overflow-y: auto;
+}
+.chat-list__item {
+  display: grid;
+  gap: 3px;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  color: var(--text-primary);
+  background: transparent;
+  border: 0;
+  border-radius: 10px;
+}
+.chat-list__item:hover,
+.chat-list__item--active {
+  background: var(--surface-muted);
+}
+.chat-list__item span {
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.chat-list__item small {
+  overflow: hidden;
+  color: var(--text-secondary);
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,22 @@
+.text-field {
+  display: grid;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.text-field input {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  color: var(--text-primary);
+  outline: 0;
+}
+.text-field input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(93, 95, 239, 0.12);
+}
+.text-field small {
+  color: var(--danger);
+  font-weight: 500;
+}

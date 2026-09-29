@@ -1,0 +1,13 @@
+.create-chat {
+  display: grid;
+  gap: 10px;
+}
+.create-chat .button {
+  width: 100%;
+}
+.create-chat p {
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--text-secondary);
+  margin: 0;
+}

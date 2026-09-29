@@ -1,0 +1,27 @@
+.composer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  padding: 14px 20px;
+  border-top: 1px solid var(--border);
+  background: #fff;
+}
+.composer textarea {
+  resize: none;
+  max-height: 120px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 11px 12px;
+  outline: 0;
+}
+.composer textarea:focus {
+  border-color: var(--accent);
+}
+.composer__error {
+  position: absolute;
+  left: 20px;
+  bottom: -22px;
+  color: var(--danger);
+  font-size: 12px;
+}

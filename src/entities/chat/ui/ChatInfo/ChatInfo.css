@@ -1,0 +1,32 @@
+.chat-info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--border);
+}
+.chat-info div {
+  display: grid;
+  gap: 3px;
+}
+.chat-info strong {
+  font-size: 15px;
+}
+.chat-info span {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.chat-info__back {
+  display: none;
+  padding: 0;
+  color: var(--text-primary);
+  background: transparent;
+  border: 0;
+  font-size: 24px;
+  line-height: 1;
+}
+@media (max-width: 700px) {
+  .chat-info__back {
+    display: block;
+  }
+}

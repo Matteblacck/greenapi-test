@@ -1,0 +1,22 @@
+.button {
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 16px;
+  font-weight: 650;
+  transition: 0.15s;
+}
+.button--primary {
+  background: var(--accent);
+  color: #fff;
+}
+.button--primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+.button--secondary {
+  background: var(--surface-muted);
+  color: var(--text-primary);
+}
+.button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
